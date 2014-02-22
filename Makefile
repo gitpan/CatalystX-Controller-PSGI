@@ -1,7 +1,7 @@
 # This Makefile is for the CatalystX::Controller::PSGI extension to perl.
 #
 # It was generated automatically by MakeMaker version
-# 6.84 (Revision: 68400) from the contents of
+# 6.66 (Revision: 66600) from the contents of
 # Makefile.PL. Don't edit this file, edit Makefile.PL instead.
 #
 #       ANY CHANGES MADE HERE WILL BE LOST!
@@ -12,16 +12,16 @@
 #   MakeMaker Parameters:
 
 #     ABSTRACT => q[use a PSGI app in a Catalyst Controller]
-#     AUTHOR => [q[n0body <n0body@thisaintnews.com>]]
-#     BUILD_REQUIRES => { Test::More=>q[0.94], Plack::Response=>q[0], ExtUtils::MakeMaker=>q[6.36], FindBin=>q[0], Plack::App::File=>q[0], Catalyst::Test=>q[0] }
+#     AUTHOR => [q[Mark Ellis <markellis@cpan.org>]]
+#     BUILD_REQUIRES => { Plack::Response=>q[0], FindBin=>q[0], Plack::App::File=>q[0], Test::More=>q[0.94], ExtUtils::MakeMaker=>q[6.36], Catalyst::Test=>q[0] }
 #     CONFIGURE_REQUIRES => {  }
 #     DISTNAME => q[CatalystX-Controller-PSGI]
 #     LICENSE => q[perl]
 #     NAME => q[CatalystX::Controller::PSGI]
 #     NO_META => q[1]
-#     PREREQ_PM => { ExtUtils::MakeMaker=>q[6.36], Test::More=>q[0.94], Moose=>q[0], FindBin=>q[0], Catalyst::Test=>q[0], Plack::App::File=>q[0], Plack::Response=>q[0], Catalyst=>q[5.90050], namespace::autoclean=>q[0] }
+#     PREREQ_PM => { Test::More=>q[0.94], namespace::autoclean=>q[0], Moose=>q[0], ExtUtils::MakeMaker=>q[6.36], Plack::App::File=>q[0], Plack::Response=>q[0], Catalyst=>q[5.90050], FindBin=>q[0], Catalyst::Test=>q[0] }
 #     TEST_REQUIRES => {  }
-#     VERSION => q[0.001001]
+#     VERSION => q[0.001002]
 #     VERSION_FROM => q[lib/CatalystX/Controller/PSGI.pm]
 #     dist => { PREOP=>q[$(PERL) -I. "-MModule::Install::Admin" -e "dist_preop(q($(DISTVNAME)))"] }
 #     realclean => { FILES=>q[MYMETA.yml] }
@@ -32,7 +32,7 @@
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.1/x86_64-linux/Config.pm).
+# These definitions are from config.sh (via /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/x86_64-linux/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = cc
@@ -49,10 +49,10 @@ LIBC = /lib/libc-2.18.so
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = linux
-OSVERS = 3.11.1-1-arch
+OSVERS = 3.12.9-1-arch
 RANLIB = :
-SITELIBEXP = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1
-SITEARCHEXP = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/x86_64-linux
+SITELIBEXP = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.2
+SITEARCHEXP = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.2/x86_64-linux
 SO = so
 VENDORARCHEXP = 
 VENDORLIBEXP = 
@@ -64,11 +64,11 @@ DIRFILESEP = /
 DFSEP = $(DIRFILESEP)
 NAME = CatalystX::Controller::PSGI
 NAME_SYM = CatalystX_Controller_PSGI
-VERSION = 0.001001
+VERSION = 0.001002
 VERSION_MACRO = VERSION
-VERSION_SYM = 0_001001
+VERSION_SYM = 0_001002
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 0.001001
+XS_VERSION = 0.001002
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib/arch
@@ -85,15 +85,15 @@ PREFIX = $(SITEPREFIX)
 PERLPREFIX = /home/mark/perl5/perlbrew/perls/perl-5.18.1
 SITEPREFIX = /home/mark/perl5/perlbrew/perls/perl-5.18.1
 VENDORPREFIX = 
-INSTALLPRIVLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.1
+INSTALLPRIVLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2
 DESTINSTALLPRIVLIB = $(DESTDIR)$(INSTALLPRIVLIB)
-INSTALLSITELIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1
+INSTALLSITELIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.2
 DESTINSTALLSITELIB = $(DESTDIR)$(INSTALLSITELIB)
 INSTALLVENDORLIB = 
 DESTINSTALLVENDORLIB = $(DESTDIR)$(INSTALLVENDORLIB)
-INSTALLARCHLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.1/x86_64-linux
+INSTALLARCHLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/x86_64-linux
 DESTINSTALLARCHLIB = $(DESTDIR)$(INSTALLARCHLIB)
-INSTALLSITEARCH = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/x86_64-linux
+INSTALLSITEARCH = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.2/x86_64-linux
 DESTINSTALLSITEARCH = $(DESTDIR)$(INSTALLSITEARCH)
 INSTALLVENDORARCH = 
 DESTINSTALLVENDORARCH = $(DESTDIR)$(INSTALLVENDORARCH)
@@ -122,13 +122,13 @@ DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = 
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
 PERL_LIB =
-PERL_ARCHLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.1/x86_64-linux
+PERL_ARCHLIB = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/x86_64-linux
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.1/x86_64-linux/CORE
+PERL_INC = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/x86_64-linux/CORE
 PERL = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin/perl "-Iinc"
 FULLPERL = /home/mark/perl5/perlbrew/perls/perl-5.18.1/bin/perl "-Iinc"
 ABSPERL = $(PERL)
@@ -143,9 +143,9 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/ExtUtils/MakeMaker.pm
-MM_VERSION  = 6.84
-MM_REVISION = 68400
+MAKEMAKER   = /home/mark/perl5/perlbrew/perls/perl-5.18.1/lib/5.18.2/ExtUtils/MakeMaker.pm
+MM_VERSION  = 6.66
+MM_REVISION = 66600
 
 # FULLEXT = Pathname for extension directory (eg Foo/Bar/Oracle).
 # BASEEXT = Basename part of FULLEXT. May be just equal FULLEXT. (eg Oracle)
@@ -197,7 +197,7 @@ PM_TO_BLIB = lib/CatalystX/Controller/PSGI.pm \
 
 
 # --- MakeMaker platform_constants section:
-MM_Unix_VERSION = 6.84
+MM_Unix_VERSION = 6.66
 PERL_MALLOC_DEF = -DPERL_EXTMALLOC_DEF -Dmalloc=Perl_malloc -Dfree=Perl_mfree -Drealloc=Perl_realloc -Dcalloc=Perl_calloc
 
 
@@ -239,7 +239,6 @@ MACROSTART =
 MACROEND = 
 USEMAKEFILE = -f
 FIXIN = $(ABSPERLRUN) -MExtUtils::MY -e 'MY->fixin(shift)' --
-CP_NONEMPTY = $(ABSPERLRUN) -MExtUtils::Command::MM -e 'cp_nonempty' --
 
 
 # --- MakeMaker makemakerdflt section:
@@ -263,7 +262,7 @@ RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
 DISTNAME = CatalystX-Controller-PSGI
-DISTVNAME = CatalystX-Controller-PSGI-0.001001
+DISTVNAME = CatalystX-Controller-PSGI-0.001002
 
 
 # --- MakeMaker macro section:
@@ -384,15 +383,15 @@ linkext :: $(LINKTYPE)
 # --- MakeMaker dlsyms section:
 
 
+# --- MakeMaker dynamic section:
+
+dynamic :: $(FIRST_MAKEFILE) $(INST_DYNAMIC) $(INST_BOOT)
+	$(NOECHO) $(NOOP)
+
+
 # --- MakeMaker dynamic_bs section:
 
 BOOTSTRAP =
-
-
-# --- MakeMaker dynamic section:
-
-dynamic :: $(FIRST_MAKEFILE) $(BOOTSTRAP) $(INST_DYNAMIC)
-	$(NOECHO) $(NOOP)
 
 
 # --- MakeMaker dynamic_lib section:
@@ -445,25 +444,24 @@ clean_subdirs :
 
 clean :: clean_subdirs
 	- $(RM_F) \
-	  $(BASEEXT).bso $(BASEEXT).def \
-	  $(BASEEXT).exp $(BASEEXT).x \
-	  $(BOOTSTRAP) $(INST_ARCHAUTODIR)/extralibs.all \
-	  $(INST_ARCHAUTODIR)/extralibs.ld $(MAKE_APERL_FILE) \
-	  *$(LIB_EXT) *$(OBJ_EXT) \
-	  *perl.core MYMETA.json \
-	  MYMETA.yml blibdirs.ts \
-	  core core.*perl.*.? \
-	  core.[0-9] core.[0-9][0-9] \
-	  core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
-	  core.[0-9][0-9][0-9][0-9][0-9] lib$(BASEEXT).def \
+	  perlmain.c core.[0-9][0-9][0-9] \
+	  *$(LIB_EXT) $(BASEEXT).x \
+	  perl.exe tmon.out \
+	  pm_to_blib $(MAKE_APERL_FILE) \
+	  core.[0-9][0-9] $(BASEEXT).bso \
+	  so_locations *perl.core \
 	  mon.out perl \
-	  perl$(EXE_EXT) perl.exe \
-	  perlmain.c pm_to_blib \
-	  pm_to_blib.ts so_locations \
-	  tmon.out 
+	  core.*perl.*.? pm_to_blib.ts \
+	  $(INST_ARCHAUTODIR)/extralibs.ld core.[0-9] \
+	  core.[0-9][0-9][0-9][0-9][0-9] $(BASEEXT).exp \
+	  core.[0-9][0-9][0-9][0-9] perl$(EXE_EXT) \
+	  core $(BOOTSTRAP) \
+	  $(BASEEXT).def *$(OBJ_EXT) \
+	  blibdirs.ts lib$(BASEEXT).def \
+	  MYMETA.yml $(INST_ARCHAUTODIR)/extralibs.all \
+	  MYMETA.json 
 	- $(RM_RF) \
 	  blib 
-	  $(NOECHO) $(RM_F) $(MAKEFILE_OLD)
 	- $(MV) $(FIRST_MAKEFILE) $(MAKEFILE_OLD) $(DEV_NULL)
 
 
@@ -478,7 +476,7 @@ realclean purge ::  clean realclean_subdirs
 	- $(RM_F) \
 	  $(MAKEFILE_OLD) $(FIRST_MAKEFILE) 
 	- $(RM_RF) \
-	  $(DISTVNAME) MYMETA.yml 
+	  MYMETA.yml $(DISTVNAME) 
 
 
 # --- MakeMaker metafile section:
@@ -505,7 +503,7 @@ manifest :
 	$(PERLRUN) "-MExtUtils::Manifest=mkmanifest" -e mkmanifest
 
 veryclean : realclean
-	$(RM_F) *~ */*~ *.orig */*.orig *.bak */*.bak *.old */*.old
+	$(RM_F) *~ */*~ *.orig */*.orig *.bak */*.bak *.old */*.old 
 
 
 
@@ -520,7 +518,6 @@ tardist : $(DISTVNAME).tar$(SUFFIX)
 
 uutardist : $(DISTVNAME).tar$(SUFFIX)
 	uuencode $(DISTVNAME).tar$(SUFFIX) $(DISTVNAME).tar$(SUFFIX) > $(DISTVNAME).tar$(SUFFIX)_uu
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).tar$(SUFFIX)_uu'
 
 $(DISTVNAME).tar$(SUFFIX) : distdir
 	$(PREOP)
@@ -528,7 +525,6 @@ $(DISTVNAME).tar$(SUFFIX) : distdir
 	$(TAR) $(TARFLAGS) $(DISTVNAME).tar $(DISTVNAME)
 	$(RM_RF) $(DISTVNAME)
 	$(COMPRESS) $(DISTVNAME).tar
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).tar$(SUFFIX)'
 	$(POSTOP)
 
 zipdist : $(DISTVNAME).zip
@@ -538,14 +534,12 @@ $(DISTVNAME).zip : distdir
 	$(PREOP)
 	$(ZIP) $(ZIPFLAGS) $(DISTVNAME).zip $(DISTVNAME)
 	$(RM_RF) $(DISTVNAME)
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).zip'
 	$(POSTOP)
 
 shdist : distdir
 	$(PREOP)
 	$(SHAR) $(DISTVNAME) > $(DISTVNAME).shar
 	$(RM_RF) $(DISTVNAME)
-	$(NOECHO) $(ECHO) 'Created $(DISTVNAME).shar'
 	$(POSTOP)
 
 
@@ -590,7 +584,7 @@ distmeta : create_distdir metafile
 
 # --- MakeMaker distsignature section:
 distsignature : create_distdir
-	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e 'eval { maniadd({q{SIGNATURE} => q{Public-key signature (added by MakeMaker)}}) }' \
+	$(NOECHO) cd $(DISTVNAME) && $(ABSPERLRUN) -MExtUtils::Manifest=maniadd -e 'eval { maniadd({q{SIGNATURE} => q{Public-key signature (added by MakeMaker)}}) } ' \
 	  -e '    or print "Could not add SIGNATURE to MANIFEST: $$$${'\''@'\''}\n"' --
 	$(NOECHO) cd $(DISTVNAME) && $(TOUCH) SIGNATURE
 	cd $(DISTVNAME) && cpansign -s
@@ -660,7 +654,6 @@ pure_vendor_install :: all
 		$(INST_SCRIPT) $(DESTINSTALLVENDORSCRIPT) \
 		$(INST_MAN1DIR) $(DESTINSTALLVENDORMAN1DIR) \
 		$(INST_MAN3DIR) $(DESTINSTALLVENDORMAN3DIR)
-
 
 doc_perl_install :: all
 	$(NOECHO) $(ECHO) Appending installation info to $(DESTINSTALLARCHLIB)/perllocal.pod
@@ -768,7 +761,7 @@ subdirs-test ::
 
 
 test_dynamic :: pure_all
-	PERL_DL_NONLAZY=1 $(FULLPERLRUN) "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness($(TEST_VERBOSE), 'inc', '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
+	PERL_DL_NONLAZY=1 $(FULLPERLRUN) "-MExtUtils::Command::MM" "-e" "test_harness($(TEST_VERBOSE), 'inc', '$(INST_LIB)', '$(INST_ARCHLIB)')" $(TEST_FILES)
 
 testdb_dynamic :: pure_all
 	PERL_DL_NONLAZY=1 $(FULLPERLRUN) $(TESTDB_SW) "-Iinc" "-I$(INST_LIB)" "-I$(INST_ARCHLIB)" $(TEST_FILE)
@@ -784,7 +777,7 @@ testdb_static :: testdb_dynamic
 ppd :
 	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="$(VERSION)">' > $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <ABSTRACT>use a PSGI app in a Catalyst Controller</ABSTRACT>' >> $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) '    <AUTHOR>n0body &lt;n0body@thisaintnews.com&gt;</AUTHOR>' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '    <AUTHOR>Mark Ellis &lt;markellis@cpan.org&gt;</AUTHOR>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Catalyst::" VERSION="5.9005" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Moose::" />' >> $(DISTNAME).ppd
